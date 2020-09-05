@@ -1,7 +1,7 @@
 {
-  "name": "@metamask/inpage-provider",
+  "name": "sparrow-inpage-provider",
   "version": "6.3.0",
-  "description": "A JavaScript Ethereum provider that connects over a WebExtension port.",
+  "description": "A JavaScript Ubiq provider that connects over a WebExtension port.",
   "main": "index.js",
   "type": "index.d.ts",
   "scripts": {
@@ -12,21 +12,21 @@
     "prepublishOnly": "yarn require-clean-git && yarn lint && yarn test",
     "require-clean-git": "git diff --quiet || (echo 'Please clean the working directory.' && exit 1)"
   },
-  "author": "MetaMask",
+  "author": "Ubiq",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/MetaMask/inpage-provider.git"
+    "url": "git+ssh://git@github.com/ubiq/sparrow-inpage-provider.git"
   },
   "keywords": [
-    "MetaMask",
-    "Ethereum",
+    "Sparrow",
+    "Ubiq",
     "Provider"
   ],
   "bugs": {
-    "url": "https://github.com/MetaMask/inpage-provider/issues"
+    "url": "https://github.com/ubiq/sparrow-inpage-provider/issues"
   },
-  "homepage": "https://github.com/MetaMask/inpage-provider#readme",
+  "homepage": "https://github.com/ubiq/sparrow-inpage-provider#readme",
   "files": [
     "src/",
     "index.d.ts"

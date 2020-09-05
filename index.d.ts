@@ -72,9 +72,9 @@ export class MetamaskInpageProvider extends EventEmitter {
   send (payload: SendSyncJsonRpcRequest): JsonRpcResponse;
 
   /**
-   * Indicating that this provider is a MetaMask provider.
+   * Indicating that this provider is a Sparrow provider.
    */
-  readonly isMetaMask: true;
+  readonly isSparrow: true;
 
   /**
    * The user's currently selected Ethereum address.

@@ -70,7 +70,7 @@ module.exports = class MetamaskInpageProvider extends SafeEventEmitter {
 
     super()
 
-    this.isMetaMask = true
+    this.isSparrow = true
 
     this.setMaxListeners(maxEventListeners)
 
