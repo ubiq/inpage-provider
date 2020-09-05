@@ -1,6 +1,6 @@
 {
   "name": "sparrow-inpage-provider",
-  "version": "6.3.0",
+  "version": "6.3.1",
   "description": "A JavaScript Ubiq provider that connects over a WebExtension port.",
   "main": "index.js",
   "type": "index.d.ts",
