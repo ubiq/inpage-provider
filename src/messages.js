@@ -1,4 +1,4 @@
-Sparrowmodule.exports = {
+module.exports = {
   errors: {
     disconnected: () => `Sparrow: Lost connection to Sparrow background process.`,
     sendSiteMetadata: () => `Sparrow: Failed to send site metadata. This is an internal error, please report this bug.`,
