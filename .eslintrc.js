@@ -1,29 +1,28 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-  },
-  extends: [
-    '@metamask/eslint-config',
-    '@metamask/eslint-config/config/jest',
-    '@metamask/eslint-config/config/nodejs',
-  ],
-  plugins: [
-    'json',
-  ],
-  parserOptions: {
-    ecmaVersion: 2018,
-  },
-  ignorePatterns: [
-    '!.eslintrc.js',
-    'node_modules/',
-  ],
+  root: true,
+
+  extends: ['@metamask/eslint-config'],
+
   overrides: [
     {
-      files: ['test/mocks/**'],
-      rules: {
-        'no-empty-function': 'off',
+      files: ['*.ts'],
+      extends: ['@metamask/eslint-config-typescript'],
+    },
+
+    {
+      files: ['*.js'],
+      parserOptions: {
+        sourceType: 'script',
+        ecmaVersion: 2018,
       },
+      extends: ['@metamask/eslint-config-nodejs'],
+    },
+
+    {
+      files: ['*.test.ts', '*.test.js'],
+      extends: ['@metamask/eslint-config-jest'],
     },
   ],
-}
+
+  ignorePatterns: ['!.eslintrc.js', 'dist/'],
+};
