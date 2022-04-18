@@ -72,7 +72,7 @@ export default class MetaMaskInpageProvider extends BaseProvider {
   /**
    * Indicating that this provider supports UIP16.
    */
-   public readonly isUIP16: true;
+  public readonly isUIP16: true;
 
   /**
    * @param connectionStream - A Node.js duplex stream
