@@ -65,9 +65,14 @@ export default class MetaMaskInpageProvider extends BaseProvider {
   public networkVersion: string | null;
 
   /**
-   * Indicating that this provider is a MetaMask provider.
+   * Indicating that this provider is a Sparrow provider.
    */
   public readonly isSparrow: true;
+
+  /**
+   * Indicating that this provider supports UIP16.
+   */
+   public readonly isUIP16: true;
 
   /**
    * @param connectionStream - A Node.js duplex stream
@@ -93,6 +98,7 @@ export default class MetaMaskInpageProvider extends BaseProvider {
 
     this.networkVersion = null;
     this.isSparrow = true;
+    this.isUIP16 = true;
 
     this._sendSync = this._sendSync.bind(this);
     this.enable = this.enable.bind(this);
